@@ -3,9 +3,16 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Basics {
+    public static void printjava() {
+        System.out.println("Hello Java this side ");
+    }
+
+    public static void add(int a, int b) {
+        System.out.println(a + b);
+    }
 
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+
         // int a = 5;
         // int b = 15;
         String name = "Alice";
@@ -14,6 +21,10 @@ public class Basics {
 
         // string
 
+        Scanner sc = new Scanner(System.in);
+        String Fullname =sc.nextLine();
+        System.out.println("Full Name is " + Fullname + " ");
+        
         // concatination
         String name1 = " perry";
         String name2 = " the platypus";
@@ -35,8 +46,25 @@ public class Basics {
         // substring
         // System.out.println(name3.substring(5,10));
 
-        // Arrays
+        //Compare two strings 
+        /*String str1 = "Hello";
+        String str2 = "World";
+        if (str1.compareTo(str2) == 0) {
+            System.out.println("Strings are equal");
+        } else {
+            System.out.println("Strings are not equal");
+        }*/
+       StringBuilder sb = new StringBuilder("Tony");
+       sb.setCharAt(0,'p');
+       System.out.println(sb);
+       sb.insert(0 , "k");
+       System.out.println(sb);
+       sb.delete(0,1);
+       System.out.println(sb);
+    
+       
 
+        // Arrays
         // int[] marks = {90,94,0};
         int[] marks = new int[3];
         marks[0] = 90;
@@ -54,7 +82,27 @@ public class Basics {
 
         // 2-D Arrays
 
-        int[][] finalmarks = { { 89, 94, 88 }, { 85, 90, 92 } };
+        // int[][] finalmarks = { { 89, 94, 88 }, { 85, 90, 92 } };
+       /*  Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number of rows:");
+        int row = sc.nextInt();
+        System.out.println("Enter number of columns:");
+        int column = sc.nextInt();
+
+
+        int[][] finalmarks = new int[row][column];
+        for(int i=0 ; i<row ; i++){
+            for(int j =0 ; j<column ; j++){
+                finalmarks[i][j] = sc.nextInt();
+            }
+        }
+        for(int i =0 ; i<row ; i++){
+            for(int j =0 ; j<column ; j++){
+                System.out.print(finalmarks[i][j] + " " );
+            }
+            System.out.println();
+        }*/
+
         // System.out.println(finalmarks[1][2]);
         // System.out.println(finalmarks[0]);
 
@@ -95,68 +143,90 @@ public class Basics {
         // System.out.println(Math.min(a,b));
 
         // Taking inputs
-        Scanner sc = new Scanner(System.in);
+        //Scanner sc = new Scanner(System.in);
 
-        //System.out.println("Enter your Age:");
-        //int Age = sc.nextInt();
-        //System.out.println(Age);
-        
-        //System.out.println("Enter Your Name :");
-        //String Name = sc.next();
-        //System.out.println(Name);
-        
-        //System.out.println("Enter Your full Name:");
-        //String Name = sc.nextLine();
-        //System.out.println(Name);
-      
+        // System.out.println("Enter your Age:");
+        // int Age = sc.nextInt();
+        // System.out.println(Age);
 
-        // Conditional Statement 
+        // System.out.println("Enter Your Name :");
+        // String Name = sc.next();
+        // System.out.println(Name);
 
-        //int Age = 17;
-        //if(Age>18)
-            //System.out.println("Can vote'");
-        //else
-            //System.out.println("Can't Vote");
+        // System.out.println("Enter Your full Name:");
+        // String Name = sc.nextLine();
+        // System.out.println(Name);
+
+        // Conditional Statement
+
+        // int Age = 17;
+        // if(Age>18)
+        // System.out.println("Can vote'");
+        // else
+        // System.out.println("Can't Vote");
 
         int c = 50;
         int d = 80;
-        //if(c < 40 && d>40)
-            //System.out.println("it will work only if both condtions are true");
-        //else
-            //System.out.println("One of the conditon is not true ");
+        // if(c < 40 && d>40)
+        // System.out.println("it will work only if both condtions are true");
+        // else
+        // System.out.println("One of the conditon is not true ");
 
-        //if(c<40 || d>40)
-            //System.out.println("It will work if either of the condtions are true ");
-        //else
-            //System.out.println("I don't know what will happen");
+        // if(c<40 || d>40)
+        // System.out.println("It will work if either of the condtions are true ");
+        // else
+        // System.out.println("I don't know what will happen");
 
-        
-        //Switch 
-        //int day = 1;
-        //switch(day){
-          //  case 1 : System.out.println("Today is monday");
-            //break;
-         //   case 2 : System.out.println("Today is tuesday");
-          //  break;
-            //case 3 : System.out.println("Today is wednesday");
-            //break;
-            //case 4 : System.out.println("Today is thursday");
-            //break;  
-            //case 5 : System.out.println("Today is friday");
-            //break;
-            //case 6 : System.out.println("Today is saturday");
-            //break;
-            //case 7 : System.out.println("Today is sunday");
-            //break;
-               // default : System.out.println("Invalid day");  
-            
+        // Switch
+        // int day = 1;
+        // switch(day){
+        // case 1 : System.out.println("Today is monday");
+        // break;
+        // case 2 : System.out.println("Today is tuesday");
+        // break;
+        // case 3 : System.out.println("Today is wednesday");
+        // break;
+        // case 4 : System.out.println("Today is thursday");
+        // break;
+        // case 5 : System.out.println("Today is friday");
+        // break;
+        // case 6 : System.out.println("Today is saturday");
+        // break;
+        // case 7 : System.out.println("Today is sunday");
+        // break;
+        // default : System.out.println("Invalid day");
 
-            //Loops 
+        // Loops
 
-            
+        // for(int i = 0 ; i<50 ; i++){
+        // System.out.println(i);
+        // }
+
+        // int i = 1;
+        // while(i<= 20){
+        // System.out.println(i);
+        // i=i+2;
+        // }
+
+        // Exceptional Handling
+        // int[] marks1 = {85 , 98 , 93};
+        // try{
+        // System.out.println(marks1[6]);
+
+        // } catch(Exception exception){
+
+        // }
+        // System.out.println("Exception handeled Successfully");
+
+        // Methods and Functions
+        // check the above part of the code
+        for (int i = 0; i < 5; i++) {
+            // printjava();
         }
+        int a1 = 93;
+        int b1 = 86;
+        // add(a1,b1);
 
-
-        
     }
+
 }
