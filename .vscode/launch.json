@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "dsa",
+            "request": "launch",
+            "mainClass": "dsa",
+            "projectName": "dsa-java-_d6c55319"
+        },
+        {
+            "type": "java",
             "name": "Question",
             "request": "launch",
             "mainClass": "Question",
