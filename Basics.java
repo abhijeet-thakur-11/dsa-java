@@ -1,10 +1,13 @@
-import java.util.Arrays;
-
 import java.util.Scanner;
 
-public class Basics {
-    public static void printjava() {
+public class Basics{
+    public static void printjava(){
         System.out.println("Hello Java this side ");
+    }
+    public static void printArray(int a[]){
+        for(int i =0 ; i<a.length ; i++){
+            System.out.println(a[i]);
+        }
     }
 
     public static void add(int a, int b) {
@@ -20,15 +23,17 @@ public class Basics {
         // System.out.println(name.length());
 
         // string
-
+/* 
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your full name: ");
         String Fullname =sc.nextLine();
         System.out.println("Full Name is " + Fullname + " ");
-        
+        */
         // concatination
         String name1 = " perry";
         String name2 = " the platypus";
         String name3 = name + name1 + name2;
+        // System.out.println("Concatenated Name: " + name3);
         // System.out.println(name3);
 
         // CharAt
@@ -54,6 +59,7 @@ public class Basics {
         } else {
             System.out.println("Strings are not equal");
         }*/
+       /* 
        StringBuilder sb = new StringBuilder("Tony");
        sb.setCharAt(0,'p');
        System.out.println(sb);
@@ -61,7 +67,7 @@ public class Basics {
        System.out.println(sb);
        sb.delete(0,1);
        System.out.println(sb);
-    
+    */
        
 
         // Arrays
@@ -119,18 +125,18 @@ public class Basics {
         // System.out.println(fp);
 
         // operators
-
+/* 
         int a = 10;
         int b = 7;
-        int add = a + b;
-        int subs = a - b;
-        int mult = a * b;
-        int div = a / b;
-        int mod = a % b;
-        int inc = a++;
-        int dec = b--;
+        System.out.println("Addition: " + (a + b));
+        System.out.println("Subtraction: " + (a - b));
+        System.out.println("Multiplication: " + (a * b));
+        System.out.println("Division: " + (a / b));
+        System.out.println("Modulo: " + (a % b));
+        a++;
+        b--;*/
         // System.out.println(add);
-        // System.out.println(subs) ;
+        // System.out.println(subs);
         // System.out.println(div);
         // System.out.println(mult);
         // System.out.println(mod);
@@ -165,17 +171,9 @@ public class Basics {
         // else
         // System.out.println("Can't Vote");
 
-        int c = 50;
-        int d = 80;
-        // if(c < 40 && d>40)
-        // System.out.println("it will work only if both condtions are true");
-        // else
-        // System.out.println("One of the conditon is not true ");
-
-        // if(c<40 || d>40)
-        // System.out.println("It will work if either of the condtions are true ");
-        // else
-        // System.out.println("I don't know what will happen");
+        int c1 = 50;
+        int d1 = 80;
+        //System.out.println("Max of 50 and 80: " + Math.max(c1, d1));
 
         // Switch
         // int day = 1;
@@ -225,7 +223,35 @@ public class Basics {
         }
         int a1 = 93;
         int b1 = 86;
-        // add(a1,b1);
+        //add(a1,b1);
+
+
+        // Buble sort 
+        int[] arry = {3,8,19,6,};
+
+        //for(int i=0 ; i<arry.length-1; i++){
+            //for(int j =0;j<arry.length-1-i ; j++){
+                //if(arry[j]> arry[j+1]){
+                    //int temp = arry[j];
+                   // //arry[j]=arry[j+1];
+                    //arry[j+1]=temp;
+                //}
+
+            //}
+        //}printArray(arry);
+
+        //Selectioon Sort
+        for(int i = 0 ; i<arry.length-1 ; i++){
+            int smallest = i ;
+            for (int j = i+1 ; j<arry.length ; j++){
+                if (arry[smallest] > arry[j]){ 
+                    smallest = j;  
+                }
+            }int temp = arry[smallest];
+            arry[smallest]=arry[i];
+            arry[i]=temp;
+        }printArray(arry);
+
 
     }
 

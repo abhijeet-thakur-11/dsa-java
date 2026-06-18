@@ -1,6 +1,13 @@
 import java.util.Scanner;
 
 public class Question {
+
+    public static void printArray(int a[]){
+        for(int i = 0 ; i <a.length ; i++){
+            System.out.println(a[i]);
+        }
+        System.out.println();
+    }
     public static void main(String[] args0) {
 
         //Scanner sc = new Scanner(System.in);
@@ -29,8 +36,8 @@ public class Question {
             //System.out.println(num);
         //}
         //while(num>0);
-
-        //Mini Project 
+        /* 
+        Mini Project 
          int mynum= (int)(Math.random()*100);
          Scanner sc = new Scanner(System.in);
          int usernum = 0;
@@ -52,11 +59,29 @@ public class Question {
          System.out.print("My number was :");
          System.out.println(mynum);
          
-
-            
-
-         
+         sc.close();
 
     }
+         */
+
+
+    int[] arry = {5,8,10,4,9};
+
+    //buuble sort 
+    for(int i = 0 ; i<arry.length-1; i++){
+        for(int j = 0 ; j<arry.length-1-i ; j++){
+            if(arry[j] > arry[j+1]){
+                //swap 
+                int temp = arry[j];
+                arry[j]=arry[j+1];
+                arry[j+1] = temp;
+
+            }
+        }
+    }
+    printArray(arry);
+}
 
 }
+
+
