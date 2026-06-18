@@ -66,7 +66,7 @@ public class Question {
 
 
     int[] arry = {5,8,10,4,9};
-
+    /* 
     //buuble sort 
     for(int i = 0 ; i<arry.length-1; i++){
         for(int j = 0 ; j<arry.length-1-i ; j++){
@@ -80,8 +80,28 @@ public class Question {
         }
     }
     printArray(arry);
-}
+     */
 
-}
+
+    //selectionsort
+    for( int i = 0 ; i<arry.length-1 ; i++){
+        int smallest = i ;
+        for (int j = i+1 ; i<arry.length ; j++){
+            if (arry[smallest]>arry[j]){
+                smallest = j;
+
+            }
+        }//swap
+        int temp = arry[smallest];
+        arry[smallest] = arry[i];
+        arry[i]= temp;
+    
+    }printArray(arry);
+    
+
+
+}}
+
+
 
 
