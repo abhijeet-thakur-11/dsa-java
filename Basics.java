@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Basics{
     public static void printjava(){
+        /* 
         System.out.println("Hello Java this side ");
     }
     public static void printArray(int a[]){
@@ -10,7 +11,7 @@ public class Basics{
             System.out.println(a[i]);
         }
     }
-
+*/
     public static void add(int a, int b) {
         System.out.println(a + b);
     }
@@ -240,7 +241,7 @@ public class Basics{
 
             //}
         //}printArray(arry);
-
+/* 
         //Selectioon Sort
         for(int i = 0 ; i<arry.length-1 ; i++){
             int smallest = i ;
@@ -252,7 +253,7 @@ public class Basics{
             arry[smallest]=arry[i];
             arry[i]=temp;
         }printArray(arry);
-
+*/
 
         
 
