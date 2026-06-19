@@ -83,7 +83,7 @@ public class Question {
      */
 
 
-    //selectionsort
+    //selection sort
     for( int i = 0 ; i<arry.length-1 ; i++){
         int smallest = i ;
         for (int j = i+1 ; i<arry.length ; j++){

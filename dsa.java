@@ -9,7 +9,7 @@ public class dsa {
         System.out.println(c);
         calcfib(b,c,n-1);
     } 
-    
+    /*
     //print x^n(stack height = n)
     public static int calcpower(int x , int n){
         if(n==0){
@@ -22,7 +22,8 @@ public class dsa {
         return xpowern;
 
     }
-
+*/
+/* 
     //Hanoi Tower
     public static void hanoi(int n , String src , String helper , String dest ){
         if (n==1){
@@ -34,7 +35,7 @@ public class dsa {
         hanoi(n-1 , helper , src , dest );
 
     }
-
+*/
     // reverse the string using recursion 
     public static void revstr(String str , int ind){
         if (ind == 0){
