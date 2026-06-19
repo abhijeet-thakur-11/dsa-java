@@ -9,9 +9,9 @@ public class Basics{
     public static void printArray(int a[]){
         for(int i =0 ; i<a.length ; i++){
             System.out.println(a[i]);
-        }
+        } */
     }
-*/
+
     public static void add(int a, int b) {
         System.out.println(a + b);
     }
