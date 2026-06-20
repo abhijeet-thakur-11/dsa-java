@@ -254,10 +254,6 @@ public class Basics{
             arry[i]=temp;
         }printArray(arry);
 */
-
-        
-
-
     }
 
 }
