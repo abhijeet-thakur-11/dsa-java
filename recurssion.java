@@ -1,6 +1,6 @@
-import java.util.HashSet;
+//import java.util.HashSet;
 
-public class dsa {
+public class recurssion {
     /*
      * 
      * // fibonacci series using recursion
@@ -187,10 +187,10 @@ public class dsa {
      */
 
     // print all the solution where queen are safe
-    public static
+    
 
-    //public static void main(String[] args) {
-    public List<List<String>> solveNQueens(int n ){ 
+    public static void main(String[] args) {
+    
 
     }
 
@@ -202,4 +202,3 @@ public class dsa {
 
     }
 
-}
