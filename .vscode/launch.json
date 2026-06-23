@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "sort",
+            "request": "launch",
+            "mainClass": "sort",
+            "projectName": "dsa-java-_d6c55319"
+        },
+        {
+            "type": "java",
             "name": "backtacking",
             "request": "launch",
             "mainClass": "backtacking",
