@@ -1,31 +1,31 @@
 //import java.util.HashSet;
 
 public class recurssion {
-    /*
-     * 
-     * // fibonacci series using recursion
-     * public static void calcfib(int a , int b , int n){
-     * if(n==0){
-     * return ;
-     * }
-     * int c = a+b ;
-     * System.out.println(c);
-     * calcfib(b,c,n-1);
-     * }
+    /* 
+      
+      // fibonacci series using recursion
+      public static void calcfib(int a , int b , int n){
+      if(n==0){
+      return ;
+      }
+      int c = a+b ;
+      System.out.println(c);
+      calcfib(b,c,n-1);
+      }
      */
     /*
-     * //print x^n(stack height = n)
-     * public static int calcpower(int x , int n){
-     * if(n==0){
-     * return 1;
-     * }if (x==0){
-     * return 1;
-     * }
-     * int xpowernm1 = calcpower(x , n-1);
-     * int xpowern = x*xpowernm1;
-     * return xpowern;
-     * 
-     * }
+      //print x^n(stack height = n)
+     public static int calcpower(int x , int n){
+      if(n==0){
+      return 1;
+      }if (x==0){
+      return 1;
+      }
+      int xpowernm1 = calcpower(x , n-1);
+      int xpowern = x*xpowernm1;
+      return xpowern;
+      
+      }
      */
     /*
      * //Hanoi Tower
