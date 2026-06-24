@@ -32,7 +32,7 @@ public class sort {
             arry[smallest]=arry[i];
             arry[i]=temp;
         }printArray(arry);
-*/
+*//* 
     
     //Merge sort 
     int arry[] = {3,8,19,6,};
@@ -60,6 +60,8 @@ public class sort {
         }
     }
     printArray(arry);
+     */
+    
 
 
 }
