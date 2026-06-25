@@ -14,44 +14,70 @@ class student{
     String name;
     int id;
 
-    public void printname(){
-        System.out.println(this.name);
-
-    }public void printid(){
-        System.out.println(this.id);
+    public void printinfo(String name ){
+        System.out.println(name);
+    }
+    public void printifo(int id){
+        System.out.print(id);
+    }public void printinfo(String name , int id){
+        System.out.println(name+" "+id);
     }
 
 
+    /* 
+    //constructors 
+    student(){
+        System.out.println("constructor called");
+    }
+    // parameterize constructors 
+    student(String name , int id){
+        this.name = name;
+        this.id= id;
+    }
+    // copy comstructor 
+    student(student s2){
+        this.name = s2.name;
+        this.id=s2.id;
+
+    }*/
+
+}
+
+class shape {
+    String color;
+    public void area (){
+        System.out.println("Display area");
+    }
+}
+class tringle extends shape {   
+    public void area( int l , int h){
+        System.out.println(0.5*l*h);
+    }
+}class circle extends shape{
+    public void area(int r){
+        System.out.println(3.14*r*r);
+    }
+}
+class equilateral extends tringle{
+    public void are(int l , int h ){
+        System.out.println(0.5*l*h);
+    }
 }
 
 public class oops {
     public static void main(String[] args) {
-       /* 
-        pen pen1=new pen();
-        pen1.color = "Blue";
-        pen1.type= "ball";
 
-       pen pen2 = new pen();
-       pen2.color = "black";
-       pen2.type= "gel";
+        // polymorphisim :- different functions with same name but different parameters 
+        //fuction overloading :- ceating same name fucntion single class , also a type of polymorphisim
+        
+        //inheritence :- when a class inherits the properties/methods of another class, increase resuability and reduce redundancy
+        // single level inheritence :- when a class inherits the properties of another class
+        // multilevel inheritence :- when a class inherits the properties of another class which is already inherited from another class
+        //heirarchical inheritence :- when multiple classes inherits the properties of a single class
+        // multiple inheritence :- when a class inherits the properties of multiple classes (not supported in java)
+        // hybrid inheritence :- combination of multiple and multilevel inheritence (not supported in java)
 
-       pen1.printcolor();
-       pen2.printcolor();
-       */
-       
-
-       student s1 = new student();
-       s1.name ="Rohit";
-       s1.id= 1;
-       student s2 = new student();
-       s2.name = "Erick";
-       s2.id = 2;
-
-       s1.printname();
-       s1.printid();
-       s2.printname();    
-       s2.printid();
-       
-
+        
+      
 }
 }
