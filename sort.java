@@ -41,6 +41,41 @@ public class sort {
     }
     */
    /* 
+   //quick sort time complexity :- worst :- o(n^2) , average :- o(nlogn)
+   // worst case occurs when the pivot is always the smallest or the largest element of the array .
+   // it can only happen when the array is the sorted array or the reverse sorted array.
+    public static int partition(int arry[] , int low , int high ){
+        int pivot = arry[high];
+        int i = low - 1 ;
+        for (int j=low;j<high ; j++){
+            if (arry[j] < pivot ){
+                i++;
+                //swap
+                int temp = arry[i];
+                arry[i]=arry[j];
+                arry[j] = temp;
+
+            }
+
+        }i++;
+        //swap the pivot 
+        int temp = arry[i];
+        arry[i] = pivot;
+        arry[high] = temp ;
+        return i ;
+    }
+
+
+    public static void quick(int arry[] , int low , int high){
+        if(low <high){
+            int pivot = partition(arry, low , high);
+            quick(arry , low ,pivot-1);
+            quick(arry , pivot+1, high);
+
+
+        }
+
+    }
    
     */
 
