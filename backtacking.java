@@ -17,6 +17,8 @@ public class backtacking {
       
      }
 
+
+
      /* 
     // is the queen safe or not ( N Queens )
     public static boolean isSafe(int row, int col, char[][] board) {
@@ -99,7 +101,9 @@ public class backtacking {
             }
         }
     }*/
-   /* 
+
+        
+    /* 
     // suduko solver 
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> allBoards = new ArrayList<>();

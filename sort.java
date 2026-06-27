@@ -39,8 +39,7 @@ public class sort {
          conquer(arry , si , mid , ei );
 
     }
-    */
-   /* 
+    /* 
    //quick sort time complexity :- worst :- o(n^2) , average :- o(nlogn)
    // worst case occurs when the pivot is always the smallest or the largest element of the array .
    // it can only happen when the array is the sorted array or the reverse sorted array.
@@ -64,6 +63,8 @@ public class sort {
         arry[high] = temp ;
         return i ;
     }
+   /* 
+   
 
 
     public static void quick(int arry[] , int low , int high){
