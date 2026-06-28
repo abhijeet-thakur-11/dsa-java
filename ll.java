@@ -1,0 +1,113 @@
+public class ll {
+
+    private int size; //to track the size without iterating 
+    
+    //assigning the size to be zero at the starting 
+    ll(){
+        this.size = 0;
+    }
+
+    
+    class Node{
+        String data ;
+        Node next;
+
+        Node(String data){
+            this.data = data;
+            this.next = null;
+            size++; // whenever a new node is created the size will be increased by 1
+        }
+    }
+    Node head; // creating head
+
+    // add at first postionof the linked list 
+    public void addfirst(String data){
+        Node newNode = new Node(data);
+        if (head == null){
+            head = newNode;
+            return;
+        }
+        newNode.next = head;
+        head = newNode;
+    }
+
+    // add at the last position of the linked list
+    public void addlast(String data){
+        Node newnode = new Node(data);
+        if(head == null){
+            head = newnode;
+            return;
+        }
+        Node currnode = head;
+        while(currnode.next!=null){
+            currnode = currnode.next;
+            
+        }
+        currnode.next = newnode;
+    }
+
+    //print linked list 
+    public void printlist(){
+        if (head == null){
+            System.out.println("linked list is empty");
+            return;
+        }
+        Node currnode = head ; 
+        while (currnode != null){
+            System.out.print(currnode.data + " --> ");
+            currnode = currnode.next;
+        }
+        System.out.println("null");
+    }
+
+    //delete first nodein linked list 
+    public void deletefirst(){
+        if (head == null){
+            System.out.println("Linked list is empty");
+            return;
+        }
+        size--; // whenever a node is deleted the size will be decreased by 1
+        head = head.next;
+    }
+
+    // delete last 
+    public void deletelast(){
+        if( head == null){
+            System.out.println("linked list is empty");
+            return;
+        }
+        if (head.next == null){
+            head = null;
+            return;
+        }
+        size--; // whenever a node is deleted the size will be decreased by 1
+        Node secondlast = head ;
+        Node lastnode = head.next;
+        while (lastnode.next != null){
+            lastnode = lastnode.next;
+            secondlast = secondlast.next;
+        }
+        secondlast.next = null;
+    }
+
+    //to tarack the size of the linked list 
+    public int getsize(){
+        return size;
+    }
+
+
+    public static void main(String[] args){
+        ll list = new ll();
+        list.addfirst("a");
+        list.addfirst("is");
+        list.addlast("alphabet");
+        list.printlist();
+        System.out.println("Size: " + list.getsize());
+        list.deletefirst();
+        list.printlist();
+        list.deletelast();
+        list.printlist();
+        System.out.println("Size: " + list.getsize());
+
+    }
+}
