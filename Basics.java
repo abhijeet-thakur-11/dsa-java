@@ -1,15 +1,16 @@
 
 import java.util.Scanner;
 
-public class Basics{
-    public static void printjava(){
-        /* 
-        System.out.println("Hello Java this side ");
-    }
-    public static void printArray(int a[]){
-        for(int i =0 ; i<a.length ; i++){
-            System.out.println(a[i]);
-        } */
+public class Basics {
+    public static void printjava() {
+        /*
+         * System.out.println("Hello Java this side ");
+         * }
+         * public static void printArray(int a[]){
+         * for(int i =0 ; i<a.length ; i++){
+         * System.out.println(a[i]);
+         * }
+         */
     }
 
     public static void add(int a, int b) {
@@ -25,12 +26,12 @@ public class Basics{
         // System.out.println(name.length());
 
         // string
-/* 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your full name: ");
-        String Fullname =sc.nextLine();
-        System.out.println("Full Name is " + Fullname + " ");
-        */
+        /*
+         * Scanner sc = new Scanner(System.in);
+         * System.out.println("Enter your full name: ");
+         * String Fullname =sc.nextLine();
+         * System.out.println("Full Name is " + Fullname + " ");
+         */
         // concatination
         String name1 = " perry";
         String name2 = " the platypus";
@@ -53,24 +54,25 @@ public class Basics{
         // substring
         // System.out.println(name3.substring(5,10));
 
-        //Compare two strings 
-        /*String str1 = "Hello";
-        String str2 = "World";
-        if (str1.compareTo(str2) == 0) {
-            System.out.println("Strings are equal");
-        } else {
-            System.out.println("Strings are not equal");
-        }*/
-       /* 
-       StringBuilder sb = new StringBuilder("Tony");
-       sb.setCharAt(0,'p');
-       System.out.println(sb);
-       sb.insert(0 , "k");
-       System.out.println(sb);
-       sb.delete(0,1);
-       System.out.println(sb);
-    */
-       
+        // Compare two strings
+        /*
+         * String str1 = "Hello";
+         * String str2 = "World";
+         * if (str1.compareTo(str2) == 0) {
+         * System.out.println("Strings are equal");
+         * } else {
+         * System.out.println("Strings are not equal");
+         * }
+         */
+        /*
+         * StringBuilder sb = new StringBuilder("Tony");
+         * sb.setCharAt(0,'p');
+         * System.out.println(sb);
+         * sb.insert(0 , "k");
+         * System.out.println(sb);
+         * sb.delete(0,1);
+         * System.out.println(sb);
+         */
 
         // Arrays
         // int[] marks = {90,94,0};
@@ -91,25 +93,27 @@ public class Basics{
         // 2-D Arrays
 
         // int[][] finalmarks = { { 89, 94, 88 }, { 85, 90, 92 } };
-       /*  Scanner sc = new Scanner(System.in);
-        System.out.println("Enter number of rows:");
-        int row = sc.nextInt();
-        System.out.println("Enter number of columns:");
-        int column = sc.nextInt();
-
-
-        int[][] finalmarks = new int[row][column];
-        for(int i=0 ; i<row ; i++){
-            for(int j =0 ; j<column ; j++){
-                finalmarks[i][j] = sc.nextInt();
-            }
-        }
-        for(int i =0 ; i<row ; i++){
-            for(int j =0 ; j<column ; j++){
-                System.out.print(finalmarks[i][j] + " " );
-            }
-            System.out.println();
-        }*/
+        /*
+         * Scanner sc = new Scanner(System.in);
+         * System.out.println("Enter number of rows:");
+         * int row = sc.nextInt();
+         * System.out.println("Enter number of columns:");
+         * int column = sc.nextInt();
+         * 
+         * 
+         * int[][] finalmarks = new int[row][column];
+         * for(int i=0 ; i<row ; i++){
+         * for(int j =0 ; j<column ; j++){
+         * finalmarks[i][j] = sc.nextInt();
+         * }
+         * }
+         * for(int i =0 ; i<row ; i++){
+         * for(int j =0 ; j<column ; j++){
+         * System.out.print(finalmarks[i][j] + " " );
+         * }
+         * System.out.println();
+         * }
+         */
 
         // System.out.println(finalmarks[1][2]);
         // System.out.println(finalmarks[0]);
@@ -127,16 +131,17 @@ public class Basics{
         // System.out.println(fp);
 
         // operators
-/* 
-        int a = 10;
-        int b = 7;
-        System.out.println("Addition: " + (a + b));
-        System.out.println("Subtraction: " + (a - b));
-        System.out.println("Multiplication: " + (a * b));
-        System.out.println("Division: " + (a / b));
-        System.out.println("Modulo: " + (a % b));
-        a++;
-        b--;*/
+        /*
+         * int a = 10;
+         * int b = 7;
+         * System.out.println("Addition: " + (a + b));
+         * System.out.println("Subtraction: " + (a - b));
+         * System.out.println("Multiplication: " + (a * b));
+         * System.out.println("Division: " + (a / b));
+         * System.out.println("Modulo: " + (a % b));
+         * a++;
+         * b--;
+         */
         // System.out.println(add);
         // System.out.println(subs);
         // System.out.println(div);
@@ -151,7 +156,7 @@ public class Basics{
         // System.out.println(Math.min(a,b));
 
         // Taking inputs
-        //Scanner sc = new Scanner(System.in);
+        // Scanner sc = new Scanner(System.in);
 
         // System.out.println("Enter your Age:");
         // int Age = sc.nextInt();
@@ -175,7 +180,7 @@ public class Basics{
 
         int c1 = 50;
         int d1 = 80;
-        //System.out.println("Max of 50 and 80: " + Math.max(c1, d1));
+        // System.out.println("Max of 50 and 80: " + Math.max(c1, d1));
 
         // Switch
         // int day = 1;
@@ -225,10 +230,8 @@ public class Basics{
         }
         int a1 = 93;
         int b1 = 86;
-        //add(a1,b1);
+        // add(a1,b1);
 
-
-        
     }
 
 }

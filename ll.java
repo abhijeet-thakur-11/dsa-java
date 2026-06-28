@@ -1,5 +1,6 @@
+import java.util.*;
 public class ll {
-
+/* 
     private int size; //to track the size without iterating 
     
     //assigning the size to be zero at the starting 
@@ -94,20 +95,38 @@ public class ll {
     public int getsize(){
         return size;
     }
-
+*/
 
     public static void main(String[] args){
-        ll list = new ll();
-        list.addfirst("a");
-        list.addfirst("is");
-        list.addlast("alphabet");
-        list.printlist();
-        System.out.println("Size: " + list.getsize());
-        list.deletefirst();
-        list.printlist();
-        list.deletelast();
-        list.printlist();
-        System.out.println("Size: " + list.getsize());
+      
+      //can also use the addfirst , addlast without writing the whole fucton (inbuilt)
+      LinkedList<String> list = new LinkedList<String>();
+      list.addFirst("a");
+      list.addLast("is");
+      list.add("list"); // by default new node is added at the last position 
+      System.out.println(list);
+
+      System.out.println(list.size());// will tells the size (inbuilt)
+
+      //to print the linked list
+      for (int i = 0 ; i<list.size() ; i++){
+        System.out.print(list.get(i) + " -->  ");
+      }
+      System.out.println("null");
+
+      // to remove the first and last using inbuilt fuctions
+      list.removeFirst();
+      System.out.println(list);
+
+      list.removeLast();
+      System.out.println(list);
+
+      //can remove aparticular indexed node 
+      list.remove(1);
+      System.out.println(list);
+
+
+
 
     }
 }
