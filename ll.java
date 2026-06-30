@@ -1,6 +1,10 @@
 import java.util.*;
+
+import org.w3c.dom.Node;
 public class ll {
-/* 
+    Node head; // creating head
+    Node next;
+
     private int size; //to track the size without iterating 
     
     //assigning the size to be zero at the starting 
@@ -19,8 +23,8 @@ public class ll {
             size++; // whenever a new node is created the size will be increased by 1
         }
     }
-    Node head; // creating head
-
+    
+/* 
     // add at first postionof the linked list 
     public void addfirst(String data){
         Node newNode = new Node(data);
@@ -97,6 +101,28 @@ public class ll {
     }
 */
 
+  //revrse a linked list using iterative approach
+  public void reverseiterate(){
+    if(head == null || head.next == null){
+        return;
+    }
+   
+    Node prevnode = head;
+    Node currnode = head.next;
+    while(currnode != null){
+        Node nextnode = currnode.next;
+        currnode.next = prevnode;
+
+        //update 
+        prevnode = currnode;
+        currnode = nextnode;
+
+
+
+    }
+
+  }
+
     public static void main(String[] args){
       
       //can also use the addfirst , addlast without writing the whole fucton (inbuilt)
@@ -124,6 +150,16 @@ public class ll {
       //can remove aparticular indexed node 
       list.remove(1);
       System.out.println(list);
+
+    
+      //reversing a Linked list using iterative approach 
+      LinkedList<Integer> list1 = new LinkedList<Integer>();
+      list1.addFirst(1);
+      list1.addFirst(2);
+      list1.addFirst(3);
+      list1.addFirst(4);
+
+
 
 
 
