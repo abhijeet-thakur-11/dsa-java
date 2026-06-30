@@ -24,7 +24,7 @@ public class ll {
         }
     }
     
-/* 
+
     // add at first postionof the linked list 
     public void addfirst(String data){
         Node newNode = new Node(data);
@@ -99,7 +99,7 @@ public class ll {
     public int getsize(){
         return size;
     }
-*/
+
 
   //revrse a linked list using iterative approach
   public void reverseiterate(){
@@ -116,10 +116,9 @@ public class ll {
         //update 
         prevnode = currnode;
         currnode = nextnode;
-
-
-
     }
+    head.next = null;
+    head = prevnode; 
 
   }
 
@@ -148,21 +147,19 @@ public class ll {
       System.out.println(list);
 
       //can remove aparticular indexed node 
-      list.remove(1);
-      System.out.println(list);
+      //list.remove(1);
+      //System.out.println(list);
 
     
       //reversing a Linked list using iterative approach 
-      LinkedList<Integer> list1 = new LinkedList<Integer>();
-      list1.addFirst(1);
-      list1.addFirst(2);
-      list1.addFirst(3);
-      list1.addFirst(4);
-
-
-
-
-
-
+      ll list1 = new ll();
+      list1.addfirst("1");
+      list1.addfirst("2");
+      list1.addfirst("3");
+      list1.addfirst("4");
+      list1.printlist();
+      
+      list1.reverseiterate();
+      list1.printlist();
     }
 }
