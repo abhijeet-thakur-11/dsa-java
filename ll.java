@@ -164,11 +164,49 @@ public class ll {
    }
 
 
+   
    // to check that if the linked list is palindrome or not 
-   public Node checkpalindrome(Node head){
-    return null;
-   }
+        //to reverse the linked list 
+   public Node reverse(Node head){
+    Node prev = null ;
+    Node curr = head;
+    while (curr!=null){
+        Node nxt = curr.next;
+        curr.next = prev;
+        prev = curr;
+        curr = next;
+    }
+    return prev;
+   }    //to find the middle of the list 
+    public Node findmiddle(Node head){
+        Node hare = head;
+        Node turtule = head;
+        while(hare.next != null && hare.next.next != null){
+            hare = hare.next.next;
+            turtule = turtule.next;
+        }
+        return turtule;
+    }
+    
+          //main fucntion
+   public boolean checkpalindrome(){
+    if ( head == null || head.next == null){
+        return true;
+    }
+    Node middle = findmiddle(head);
+    Node secondhalfstart = reverse(middle.next);
 
+    Node firsthalfstart = head ;
+    while (secondhalfstart != null){
+        if(firsthalfstart.data != secondhalfstart.data){
+            return false;
+
+        }
+        firsthalfstart = firsthalfstart.next;
+        secondhalfstart = secondhalfstart.next;
+    }
+    return true; 
+   }
 
 
     public static void main(String[] args){
@@ -209,9 +247,8 @@ public class ll {
       list1.addlast("5");
       list1.printlist();
       
-      int n = 2;
-      list1.nthnodedelete(n);
-      list1.printlist();
+      
+      System.out.println(list1.checkpalindrome());
       
 
 
