@@ -95,10 +95,14 @@ public class ll {
         secondlast.next = null;
     }
 
+
+
     //to tarack the size of the linked list 
     public int getsize(){
         return size;
     }
+
+
 
 
   //revrse a linked list using iterative approach
@@ -121,6 +125,10 @@ public class ll {
     head = prevnode; 
 
   }
+
+
+
+  // reversing the linked list using recursive approach
   public Node reverserecursive(Node head){
    if (head==null || head.next ==null){
     return head;
@@ -131,6 +139,37 @@ public class ll {
     return newhead;
 
   }
+
+
+  //find the nth node of the linked list and delete it 
+   public Node nthnodedelete(int n ){
+    int size = 0;
+    Node currnode = head ;
+    while ( currnode!= null){
+        currnode = currnode.next;
+        size++;
+    }
+    if (n==size){
+        return head.next;
+    }
+    int index = size - n -1 ;
+    Node prev = head;
+    int i = 0;
+    while ( i<index){
+        prev = prev.next;
+        i++;
+    }
+    prev.next = prev.next.next;
+    return head;
+   }
+
+
+   // to check that if the linked list is palindrome or not 
+   public Node checkpalindrome(Node head){
+    return null;
+   }
+
+
 
     public static void main(String[] args){
 /* 
@@ -163,7 +202,18 @@ public class ll {
 */
       //reversing a Linked list using iterative approach 
       ll list1 = new ll();
-     
+      list1.addfirst("1");
+      list1.addlast("2"); 
+      list1.addlast("3");
+      list1.addlast("4");
+      list1.addlast("5");
+      list1.printlist();
+      
+      int n = 2;
+      list1.nthnodedelete(n);
+      list1.printlist();
+      
+
 
 
      
