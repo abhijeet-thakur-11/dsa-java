@@ -12,7 +12,7 @@ public class ll {
         this.size = 0;
     }
 
-    
+   
     class Node{
         String data ;
         Node next;
@@ -121,9 +121,19 @@ public class ll {
     head = prevnode; 
 
   }
+  public Node reverserecursive(Node head){
+   if (head==null || head.next ==null){
+    return head;
+   }
+    Node newhead = reverserecursive(head.next);
+    head.next.next = head;
+    head.next = null;
+    return newhead;
+
+  }
 
     public static void main(String[] args){
-      
+/* 
       //can also use the addfirst , addlast without writing the whole fucton (inbuilt)
       LinkedList<String> list = new LinkedList<String>();
       list.addFirst("a");
@@ -150,16 +160,14 @@ public class ll {
       //list.remove(1);
       //System.out.println(list);
 
-    
+*/
       //reversing a Linked list using iterative approach 
       ll list1 = new ll();
-      list1.addfirst("1");
-      list1.addfirst("2");
-      list1.addfirst("3");
-      list1.addfirst("4");
-      list1.printlist();
-      
-      list1.reverseiterate();
-      list1.printlist();
+     
+
+
+     
+
+    
     }
 }
