@@ -198,6 +198,26 @@ public class ll {
         return true;
     }
 
+
+    //detecting the cycle in a linked list 
+    //(Floyd's cycle detection algorithm)
+    public boolean hasCycle() {
+       if(head== null){
+        return false;
+       }
+        Node hare = head;
+        Node turtle = head;
+        while(hare != null && hare.next != null){
+            turtle = turtle.next;
+            hare= hare.next.next;
+            if(hare==turtle){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
     public static void main(String[] args) {
         /*
          * //can also use the addfirst , addlast without writing the whole fucton
@@ -237,7 +257,6 @@ public class ll {
 
         list1.printlist();
 
-        System.out.println(list1.checkpalindrome());
-
+        System.out.println(list1.checkpalindrome());  
     }
 }
